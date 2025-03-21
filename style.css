@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color:#212121;
+}
+
+.dark-theme{
+  --primary-color:#000106;
+  --secondary-color:#fff;
+}
+
+.hero {
+  height: 400vh;
+  width: 100%;
+  background:var(--primary-color);
+  font-family: sans-serif;
+  position: sticky;
+  
+}
+
+nav {
+  width: 84%;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(47, 205, 211, 0.781);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Ensure the nav bar stays on top */
+  transition: .5s ease;
+  height: 140px;
+}
+
+nav:hover {
+  background-color: rgba(6, 201, 201, 0.349);
+  height: 154px;
+  top: 0;
+  left: 0;
+  right: 0;
+  }
+
+  .navigation-bar {
+    padding: 0 0;
+   margin-top: -153px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(95, 158, 160, 0.438);
+  }
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+  height: 75px;
+  margin-left: 65px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 20px;
+
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: .125s ease;
+}
+
+nav ul li a:hover {
+  color: #051636;
+  font-weight: 555;
+  text-decoration: dotted;
+}
+
+.info {
+  margin-left: 8%;
+  margin-top: 153px;
+  width: 5000px;
+ 
+}
+
+.info h1 {
+  margin-top: 135px;
+  font-size: 70px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  padding-top: 65px;
+}
+
+span {
+  color: darkcyan;
+}
+
+.info p {
+  color: var(--secondary-color);
+  line-height: 22px;
+  width: 600px;
+  
+}
+
+.info a {
+  text-decoration: none;
+  background: var(--secondary-color);
+  padding: 10px 18px;
+  color: var(--primary-color);
+  margin: 30px 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.img-box {
+  width: 25%;
+  height: 80%;
+  height: auto; /* Allow height to scale with content */
+  position: absolute;
+  
+  left: 75%;
+  top: 3px;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  transition: bottom 1s;
+  transform: translateX(-50%);
+  transition: 1s ease;
+}
+
+
+.img-box:hover .back{
+width: 105%;
+padding-right: -110px;
+margin-top: -2%;
+}
+
+.img-box:hover .main{
+  width: 115%;
+  margin-left: 5%;
+}
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+  margin-right: 200px;
+}
